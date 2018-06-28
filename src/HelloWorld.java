@@ -3,6 +3,7 @@ public class HelloWorld {
 	
 	public static void main(String args[]) {
 		//\u000dSystem.out.println("Hello World");
+		// Changes 1 - test
 		
 		// STRING is immutable - once the object is created it value cannot bechanged
 		String str = "value 1";
