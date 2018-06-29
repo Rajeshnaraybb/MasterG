@@ -92,58 +92,5 @@ public class HelloWorld {
 
 		int[][] matrixA = new int[5][6];
 
-		// First dimension is necessary to create a 2D Array
-		// Best way to visualize a 2D array is as an array of arrays
-		// ArrayOnHeap.xls
-		matrixA = new int[3][];// FINE
-		// matrixA = new int[][5];//COMPILER ERROR
-		// matrixA = new int[][];//COMPILER ERROR
-
-		// We can create a ragged 2D Array
-		matrixA[0] = new int[3];
-		matrixA[0] = new int[4];
-		matrixA[0] = new int[5];
-
-		// Above matrix has 2 rows 3 columns.
-
-		// Accessing an element from 2D array:
-		System.out.println(matrix[0][0]); // 1
-		System.out.println(matrix[1][2]); // 6
-
-		// Looping a 2D array:
-		for (int[] array : matrix) {
-			for (int number : array) {
-				System.out.println(number);
-			}
-		}
-
-		// Printing a 1D Array
-		int marks5[] = { 25, 30, 50, 10, 5 };
-		System.out.println(marks5); // [I@6db3f829
-		System.out.println(Arrays.toString(marks5));// [25, 30, 50, 10, 5]
-
-		// Printing a 2D Array
-		int[][] matrix3 = { { 1, 2, 3 }, { 4, 5, 6 } };
-		System.out.println(matrix3); // [[I@1d5a0305
-		System.out.println(Arrays.toString(matrix3));
-		// [[I@6db3f829, [I@42698403]
-		System.out.println(Arrays.deepToString(matrix3));
-		// [[1, 2, 3], [4, 5, 6]]
-
-		// matrix3[0] is a 1D Array
-		System.out.println(matrix3[0]);// [I@86c347
-		System.out.println(Arrays.toString(matrix3[0]));// [1, 2, 3]
-
-		// Comparing Arrays
-		int[] numbers1 = { 1, 2, 3 };
-		int[] numbers2 = { 4, 5, 6 };
-		System.out.println(Arrays.equals(numbers1, numbers2)); // false
-		int[] numbers3 = { 1, 2, 3 };
-		System.out.println(Arrays.equals(numbers1, numbers3)); // true
-
-		// Sorting An Array
-		int rollNos[] = { 12, 5, 7, 9 };
-		Arrays.sort(rollNos);
-		System.out.println(Arrays.toString(rollNos));// [5, 7, 9, 12]
 	}
 }
