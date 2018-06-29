@@ -17,13 +17,6 @@ public class HelloWorld {
 
 		// Creating an array
 		marks = new int[5]; // 5 is size of array
-
-		// Size of an array is mandatory to create an array
-		// marks = new int[];//COMPILER ERROR
-
-		// Once An Array is created, its size cannot be changed.
-
-		// Declaring and creating an array in same line
 		int marks2[] = new int[5];
 
 		// new Arrays are alway initialized with default values
@@ -69,28 +62,6 @@ public class HelloWorld {
 		// Fill array with same default value
 		Arrays.fill(marks, 100); // All array values will be 100
 
-		// Access 10th element when array has only length 5
-		// Runtime Exception : ArrayIndexOutOfBoundsException
-		// System.out.println(marks[10]);
-
-		// String Array: similar to int array.
-		String[] daysOfWeek = { "Sunday", "Monday", "Tuesday", "Wednesday",
-				"Thursday", "Friday", "Saturday" };
-
-		// Array can contain only values of same type.
-		// COMPILE ERROR!!
-		// int marks4[] = {10,15.0}; //10 is int 15.0 is float
-
-		// Cross assigment of primitive arrays is ILLEGAL
-		int[] ints = new int[5];
-		short[] shorts = new short[5];
-		// ints = shorts;//COMPILER ERROR
-		// ints = (int[])shorts;//COMPILER ERROR
-
-		// 2D Arrays
-		int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 } };
-
-		int[][] matrixA = new int[5][6];
 
 	}
 }
